@@ -8,14 +8,16 @@ class Agendamento {
     private $data_hora;
     private $id_barbeiro;
     private $token;
+    private $id_servico;
 
-    public function __construct($nome_cliente, $numero_tel, $data_hora, $id_barbeiro, $token)
+    public function __construct($nome_cliente, $numero_tel, $data_hora, $id_barbeiro, $token, $id_servico)
     {
         $this->nome_cliente = $nome_cliente;
         $this->numero_tel = $numero_tel;
         $this->data_hora = $data_hora;
         $this->id_barbeiro = $id_barbeiro;
         $this->token = $token;
+        $this->id_servico = $id_servico;
     }
 
     public function getNomeCliente() {
@@ -36,5 +38,9 @@ class Agendamento {
 
     public function getToken(){
        return $this->token;
+    }
+
+    public function getIdServico(){
+       return $this->id_servico;
     }
 }

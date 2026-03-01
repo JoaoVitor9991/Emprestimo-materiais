@@ -3,19 +3,19 @@
 
 require_once __DIR__ . '/conexao/Conexao.php';
 require_once __DIR__ . '/model/Agendamento.php';
-require_once __DIR__ . '/dao/AgendamentoDAO.php';
+require_once __DIR__ . '/dao/Agendamento.php';
 
 
 $tokenUnico = bin2hex(random_bytes(16));
 
 
-$agendamentoTeste = new Agendamento(
-    "João Vitor", 
-    "67999999999", 
-    "2026-03-10 14:00:00", 
-    1, 
-    $tokenUnico
-);
+// $agendamentoTeste = new Agendamento(
+//     "João Vitor", 
+//     "67999999999", 
+//     "2026-03-10 14:00:00", 
+//     1, 
+//     $tokenUnico
+// );
 
 
 $conexao = Conexao::conectar();
