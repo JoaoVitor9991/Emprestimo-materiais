@@ -1,8 +1,8 @@
 <?php
 
 require_once __DIR__ . '/back-end/conexao/Conexao.php';
-require_once __DIR__ . '/back-end/model/Agendamento.php';
-require_once __DIR__ . '/back-end/dao/Agendamento.php'; 
+require_once __DIR__ . '/back-end/model/AgendamentoModel.php';
+require_once __DIR__ . '/back-end/dao/AgendamentoDAO.php'; 
 
 try {
     

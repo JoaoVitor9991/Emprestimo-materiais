@@ -2,8 +2,8 @@
 
 
 require_once __DIR__ . '/conexao/Conexao.php';
-require_once __DIR__ . '/model/Agendamento.php';
-require_once __DIR__ . '/dao/Agendamento.php';
+require_once __DIR__ . '/model/AgendamentoModel.php';
+require_once __DIR__ . '/dao/AgendamentoDAO.php';
 
 
 $tokenUnico = bin2hex(random_bytes(16));
