@@ -7,7 +7,7 @@ class BarbeiroDAO{
         $this->pdo = $conexao;
     }
 
-    public function listar(){
+    public function listarBarbeiros(){
         try {
 
             $sql = "SELECT * FROM barbeiros";

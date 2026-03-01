@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../Conexao/Conexao.php';
-
 class Agendamento {
     private $nome_cliente;
     private $numero_tel;

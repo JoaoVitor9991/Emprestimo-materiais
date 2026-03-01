@@ -55,5 +55,16 @@ class AgendamentoDAO {
                 die("Erro ao buscar horários: " . $e->getMessage());
         }   
     }
+
+    public function cancelar($token){
+        try{
+            $sql = "UPDATE agendamentos SET status = 'Cancelado' WHERE token = :token";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->bindValue(':token', $token);
+            return $stmt->execute();
+        } catch (PDOException $e){
+            die ("Erro ao cancelar agendamento: . " . $e->getMessage());
+        }
+    }
 }
 
